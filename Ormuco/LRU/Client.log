@@ -1,0 +1,21 @@
+./Client.py  --enable-stdout-log
+[2019-Mar-12 05:33:25] INFO: ========== Command line options ========== [Application.py:86]
+[2019-Mar-12 05:33:25] INFO: log_file=/var/lib/my_test_app/log/Client.log [Application.py:89]
+[2019-Mar-12 05:33:25] INFO: log_level=info [Application.py:89]
+[2019-Mar-12 05:33:25] INFO: enable_stdout_log=True [Application.py:89]
+[2019-Mar-12 05:33:25] INFO: server_info=127.0.0.1:9999 [Application.py:89]
+[2019-Mar-12 05:33:25] INFO: ======== End Command line options ======== [Application.py:90]
+[2019-Mar-12 05:33:25] INFO: Starting Client thread... [Client.py:41]
+Enter a string: hello
+[2019-Mar-12 05:33:28] INFO: Request: hello [Client.py:48]
+Response: olleh
+[2019-Mar-12 05:33:28] INFO: Response: olleh [Client.py:56]
+Enter a string: hi
+[2019-Mar-12 05:33:30] INFO: Request: hi [Client.py:48]
+Response: ih
+[2019-Mar-12 05:33:30] INFO: Response: ih [Client.py:56]
+Enter a string: java
+[2019-Mar-12 05:33:31] INFO: Request: java [Client.py:48]
+Response: avaj
+[2019-Mar-12 05:33:31] INFO: Response: avaj [Client.py:56]
+

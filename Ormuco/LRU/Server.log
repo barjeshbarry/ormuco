@@ -1,0 +1,89 @@
+ ./Server.py --enable-stdout-log --cache-tracker-thread-interval-min=1 --cache-file-age-min=1
+[2019-Mar-12 05:21:24] INFO: ========== Command line options ========== [Application.py:86]
+[2019-Mar-12 05:21:24] INFO: log_level=info [Application.py:89]
+[2019-Mar-12 05:21:24] INFO: ip=127.0.0.1 [Application.py:89]
+[2019-Mar-12 05:21:24] INFO: cache_tracker_thread_interval_min=1 [Application.py:89]
+[2019-Mar-12 05:21:24] INFO: enable_stdout_log=True [Application.py:89]
+[2019-Mar-12 05:21:24] INFO: cache_dir=/var/lib/my_test_app/cache [Application.py:89]
+[2019-Mar-12 05:21:24] INFO: max_cache_entries=10 [Application.py:89]
+[2019-Mar-12 05:21:24] INFO: log_file=/var/lib/my_test_app/log/Server.log [Application.py:89]
+[2019-Mar-12 05:21:24] INFO: cache_file_age_min=1 [Application.py:89]
+[2019-Mar-12 05:21:24] INFO: port=9999 [Application.py:89]
+[2019-Mar-12 05:21:24] INFO: ======== End Command line options ======== [Application.py:90]
+[2019-Mar-12 05:21:24] INFO: Starting Server thread... [Server.py:35]
+[2019-Mar-12 05:21:24] INFO: socket binded to 127.0.0.1:9999 [Server.py:43]
+[2019-Mar-12 05:21:24] INFO: socket is in listening mode. [Server.py:58]
+[2019-Mar-12 05:22:51] INFO: Recieved connection from: ('127.0.0.1', 41934) [Server.py:61]
+hello
+Cache does not exist
+[2019-Mar-12 05:22:51] INFO: socket is in listening mode. [Server.py:58]
+Successfully wrote cache entry to /var/lib/my_test_app/cache/5d41402abc4b2a76b9719d911017c592
+Status: timed out
+[2019-Mar-12 05:24:00] INFO: Recieved connection from: ('127.0.0.1', 41936) [Server.py:61]
+hello
+[2019-Mar-12 05:24:00] INFO: socket is in listening mode. [Server.py:58]
+Found cache for the request
+Status: Client disconnected
+[2019-Mar-12 05:24:25] INFO: Recieved connection from: ('127.0.0.1', 41938) [Server.py:61]
+hello
+[2019-Mar-12 05:24:25] INFO: socket is in listening mode. [Server.py:58]
+Found cache for the request
+Status: Client disconnected
+[2019-Mar-12 05:24:28] INFO: Recieved connection from: ('127.0.0.1', 41940) [Server.py:61]
+hi
+Cache does not exist
+[2019-Mar-12 05:24:28] INFO: socket is in listening mode. [Server.py:58]
+Successfully wrote cache entry to /var/lib/my_test_app/cache/49f68a5c8493ec2c0bf489821c21fc3b
+Status: Client disconnected
+[2019-Mar-12 05:24:31] INFO: Recieved connection from: ('127.0.0.1', 41942) [Server.py:61]
+java is hot
+Cache does not exist
+[2019-Mar-12 05:24:31] INFO: socket is in listening mode. [Server.py:58]
+Successfully wrote cache entry to /var/lib/my_test_app/cache/0cffe83827c4be7c131dc46d789d6bf4
+Status: Client disconnected
+Deleted key 5d41402abc4b2a76b9719d911017c592 from cache.
+Deleted key 0cffe83827c4be7c131dc46d789d6bf4 from cache.
+Deleted key 49f68a5c8493ec2c0bf489821c21fc3b from cache.
+[2019-Mar-12 05:26:49] INFO: Recieved connection from: ('127.0.0.1', 41944) [Server.py:61]
+hello
+Cache does not exist
+[2019-Mar-12 05:26:49] INFO: socket is in listening mode. [Server.py:58]
+Successfully wrote cache entry to /var/lib/my_test_app/cache/5d41402abc4b2a76b9719d911017c592
+Status: Client disconnected
+[2019-Mar-12 05:26:52] INFO: Recieved connection from: ('127.0.0.1', 41946) [Server.py:61]
+sffs
+Cache does not exist
+[2019-Mar-12 05:26:52] INFO: socket is in listening mode. [Server.py:58]
+Successfully wrote cache entry to /var/lib/my_test_app/cache/225f3cfdb487d2b86fabce3e88e8ee35
+Status: Client disconnected
+[2019-Mar-12 05:26:56] INFO: Recieved connection from: ('127.0.0.1', 41948) [Server.py:61]
+gbh
+[2019-Mar-12 05:26:56] INFO: socket is in listening mode. [Server.py:58]
+Cache does not exist
+Successfully wrote cache entry to /var/lib/my_test_app/cache/d44e7a48a82a23abf02c6efdeb0a056a
+Status: Client disconnected
+Deleted key 225f3cfdb487d2b86fabce3e88e8ee35 from cache.
+Deleted key d44e7a48a82a23abf02c6efdeb0a056a from cache.
+Deleted key 5d41402abc4b2a76b9719d911017c592 from cache.
+[2019-Mar-12 05:33:28] INFO: Recieved connection from: ('127.0.0.1', 41950) [Server.py:61]
+hello
+Cache does not exist
+Error while writing cache. Error: [Errno 2] No such file or directory: '/var/lib/my_test_app/cache/5d41402abc4b2a76b9719d911017c592'
+[2019-Mar-12 05:33:28] INFO: socket is in listening mode. [Server.py:58]
+Status: Client disconnected
+[2019-Mar-12 05:33:30] INFO: Recieved connection from: ('127.0.0.1', 41952) [Server.py:61]
+hi
+[2019-Mar-12 05:33:30] INFO: socket is in listening mode. [Server.py:58]
+Cache does not exist
+Error while writing cache. Error: [Errno 2] No such file or directory: '/var/lib/my_test_app/cache/49f68a5c8493ec2c0bf489821c21fc3b'
+Status: Client disconnected
+[2019-Mar-12 05:33:31] INFO: Recieved connection from: ('127.0.0.1', 41954) [Server.py:61]
+java
+Cache does not exist
+[2019-Mar-12 05:33:31] INFO: socket is in listening mode. [Server.py:58]
+Error while writing cache. Error: [Errno 2] No such file or directory: '/var/lib/my_test_app/cache/93f725a07423fe1c889f448b33d21f46'
+Status: Client disconnected
+Deleted key 93f725a07423fe1c889f448b33d21f46 from cache.
+Deleted key 49f68a5c8493ec2c0bf489821c21fc3b from cache.
+Deleted key 5d41402abc4b2a76b9719d911017c592 from cache.
+
